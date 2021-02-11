@@ -38,7 +38,7 @@ export const Select = (props) => {
             <select className={'field__select'} {...props.field}>
                 {
                     props.option.map((o, index) => 
-                        <option value={o} key={index}>{o}</option>
+                        <option selected={true} value={o} key={index}>{o}</option>
                     )
                 }
             </select>
