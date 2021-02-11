@@ -38,6 +38,18 @@ const Login = () => {
                 ({handleSubmit, setErrors, setTouched, status}) => (
                     <form onSubmit={handleSubmit} className={'form'}> 
                         <div className={'form__container'}>
+                            <div className={'steps form__steps'}>
+                                {
+                                    steps.map((s, index) => {
+                                        return (
+                                            <div className={['steps__step',  (step > index)  && 'active'].join(' ')}>
+                                                {s}
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+
                             {   
                                 (status) &&
                                     <div className={'form__error'}>
