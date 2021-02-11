@@ -24,8 +24,26 @@
 }
 
 .form__steps {
+    position: relative;
     justify-content: space-between;
     margin: 0 0 30px 0;
+}
+
+.steps__arrow_container {
+    position: absolute;
+    margin: 15px 0;
+    width: calc(100% - 50px);
+    left: 25px;
+    display: flex;
+    justify-content: flex-start;
+    height: 1px;
+    background-color: #b3d6ff;
+}
+
+.steps__arrow {
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #0075ff;
 }
 
 .steps__step {
@@ -39,7 +57,7 @@
 }
 
 .steps__step:not(.active) {
-    opacity: 0.3;
+    color: #b2d6ff;
 }
 
 .steps .steps__step:after {
@@ -48,6 +66,10 @@
     border: 16px solid #0075ff;
     border-radius: 50%;
     top: 0;
+}
+
+.steps__step:not(.active):after{
+    border-color: #b2d6ff;   
 }
 
 .steps .steps__step:before {

@@ -39,6 +39,10 @@ const Login = () => {
                     <form onSubmit={handleSubmit} className={'form'}> 
                         <div className={'form__container'}>
                             <div className={'steps form__steps'}>
+                                <div className={'steps__arrow_container'}>
+                                    <hr style={{width: `${100 / (steps.length - 1) * (step - 1)}%`}} className={'steps__arrow'}></hr>
+                                </div>
+
                                 {
                                     steps.map((s, index) => {
                                         return (
