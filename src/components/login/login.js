@@ -18,7 +18,7 @@ const Login = ({form_data, steps, gotoStep}) => {
     };
 
     return (
-            <Formik initialValues={initialValues}  onSubmit={onSubmit}>
+            <Formik enableReinitialize initialValues={initialValues}  onSubmit={onSubmit}>
                 {
                     ({handleSubmit, status}) => (
                         <form onSubmit={handleSubmit} className={'form'}> 

@@ -21,9 +21,9 @@ export const Address = React.memo(() => {
     return (
         <div className={'form__body'}>
 
-            <Field title={'Country'} name={'country'} component={Input}/>
-            <Field title={'City'} name={'city'} component={Input}/>
-            <Field title={'Address'} name={'address'} component={Input}/>
+            <Field title={'Country'} name={'country'} component={Input} validate={validateEmail}/>
+            <Field title={'City'} name={'city'} component={Input} validate={validateEmail}/>
+            <Field title={'Address'} name={'address'} component={Input} validate={validateEmail}/>
 
             <button className={'form__send'}>Next</button>
         </div>
