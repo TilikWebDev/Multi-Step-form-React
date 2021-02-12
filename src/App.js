@@ -7,7 +7,7 @@ import './App.css';
 const App = (props) => {
   return (
     <div id="wrapper">
-      <Route exact path={'/'} render={() => <LoginContainer/>}/>
+      <Route path={'/'} render={() => <LoginContainer/>}/>
     </div>
   );
 }
