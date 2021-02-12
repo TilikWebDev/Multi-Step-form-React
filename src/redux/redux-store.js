@@ -4,7 +4,7 @@ import thunkMiddleWare from 'redux-thunk';
 import loginReducer from './login-reducer';
 
 let reducers = combineReducers({
-    login: loginReducer  
+    login_page: loginReducer  
 });
 
 

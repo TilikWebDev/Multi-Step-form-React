@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Field } from 'formik';
 
-import { validateEmail, validatePassword, validatePhone } from '../../../utils/validators/validators';
+import { required, validateEmail, validatePassword, validatePhone } from '../../../utils/validators/validators';
 import {Input, Select} from '../../../components/common/form-controls/form-controls';
 
-const FormByStep = ({step, setErrors, setTouched}) => {
+const FormByStep = ({send_data, step, setErrors, setTouched}) => {
 
     useEffect(() => {
         setErrors({})
@@ -22,14 +22,14 @@ const FormByStep = ({step, setErrors, setTouched}) => {
             return <Category/>
 
         default:
-            return <Success/>
+            return <Success send_data={send_data}/>
     }
 }
 
 const Contact = React.memo(() => {
     return (
         <div className={'form__body'}>
-            <Field title={'Phone'} name={'phone'} component={Input} validate={validatePhone}/>
+            <Field title={'Phone'} name={'phone'} inputMode={'tel'} component={Input} validate={validatePhone}/>
             <Field title={'Email'} name={'email'} component={Input} validate={validateEmail}/>
             <Field title={'Password'} name={'password'} type={'password'} component={Input} validate={validatePassword}/>
         </div>
@@ -39,9 +39,9 @@ const Contact = React.memo(() => {
 const Address = React.memo(() => {
     return (
         <div className={'form__body'}>
-            <Field title={'Country'} name={'country'} component={Input} validate={validateEmail}/>
-            <Field title={'City'} name={'city'} component={Input} validate={validateEmail}/>
-            <Field title={'Address'} name={'address'} component={Input} validate={validateEmail}/>
+            <Field title={'Country'} name={'country'} component={Input} validate={required}/>
+            <Field title={'City'} name={'city'} component={Input} validate={required}/>
+            <Field title={'Address'} name={'address'} component={Input} validate={required}/>
         </div>
     )
 });
@@ -49,37 +49,43 @@ const Address = React.memo(() => {
 const Category = React.memo(() => {
     return (      
         <div className={'form__body'}>
-            <Field title={'Category 1'} name={'category'} component={Select} option={['C1', 'C2', 'C3']}/>
-            <Field title={'Category 2'} name={'category2'} component={Select} option={['C1', 'C2', 'C3']}/>
-            <Field title={'Category 3'} name={'category3'} component={Select} option={['C1', 'C2', 'C3']}/>
+            <Field title={'Category 1'} name={'category1'} component={Select} validate={required} option={['first', 'second', 'third']}/>
+            <Field title={'Category 2'} name={'category2'} component={Select} validate={required} option={['first', 'second', 'third']}/>
+            <Field title={'Category 3'} name={'category3'} component={Select} validate={required} option={['first', 'second', 'third']}/>
         </div>
     )
 });
 
-const Success = React.memo(() => {
+const Success = React.memo(({send_data}) => {
     return (      
         <div className={'form__body'}>
-            <div className={'formsend'}>
-                <h1 className={'formsend_title'}>
+            <div className={'formsuccess'}>
+                <h1 className={'formsuccess__title'}>
                     Success!
                 </h1>
 
-                <h2 className={'formsend_text'}>
+                <h4 className={'formsuccess__text'}>
                     Your account was successfuly registered.
                     <br></br>
                     Please wait for account approval.
                     <br></br>
                     It can take up to 24 hours.
-                </h2>
+                </h4>
 
-                <p className={'formsend_contact'}>
+                <p className={'formsuccess__contact'}>
                     Have questions?
                     <br></br>
                     Contact
-                    <a className={'formsend_link'} href="mailto:info@site.com">
+                    <a className={'formsuccess__link'} href="mailto:info@site.com">
                         info@site.com
                     </a>
                 </p>
+            </div>
+
+            <div id={'log'}>
+                {
+                    `Send data to server: ${JSON.stringify(send_data)}`
+                }
             </div>
         </div>
     )

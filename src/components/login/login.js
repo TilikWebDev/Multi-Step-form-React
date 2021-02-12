@@ -4,7 +4,7 @@ import { Formik } from 'formik';
 import FormByStep from './steps/steps';
 import SubmitButton from './submit-buton';
 
-const Login = () => {
+const Login = ({send_data, setSendData}) => {
 
     const [step, setStep] = useState(1);
 
@@ -29,7 +29,7 @@ const Login = () => {
 
     const onSubmit = (values) => {
         setStep(step + 1);      
-        (step === (steps.length - 1)/* -1 Because last step is Success page */) && alert(`Send data: ${JSON.stringify(values)}`);
+        (step === (steps.length - 1)/* -1 Because last step is Success page */) && setSendData(values);
     };
 
     return (
@@ -46,7 +46,7 @@ const Login = () => {
                                 {
                                     steps.map((s, index) => {
                                         return (
-                                            <div className={['steps__step',  (step > index)  && 'active'].join(' ')}>
+                                            <div key={index} className={['steps__step',  (step > index)  && 'active'].join(' ')}>
                                                 {s}
                                             </div>
                                         )
@@ -61,7 +61,7 @@ const Login = () => {
                                     </div>        
                             }    
 
-                            <FormByStep step={step} setErrors={setErrors} setTouched={setTouched}/>
+                            <FormByStep send_data={send_data} step={step} setErrors={setErrors} setTouched={setTouched}/>
                             <SubmitButton step={step} final={(steps.length - 1)/* -1 Because last step is Success page */}/>
                         </div>
                     </form> 
@@ -71,6 +71,4 @@ const Login = () => {
     )
 }
 
-export default React.memo(Login, (prevProps, nextProps) => {
-    return (prevProps.steps.name === nextProps.steps.name)
-});
+export default React.memo(Login);
