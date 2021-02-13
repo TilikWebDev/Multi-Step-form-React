@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/login-form/static/css/main.fba31b63.chunk.css",
-    "main.js": "/login-form/static/js/main.d04f8987.chunk.js",
-    "main.js.map": "/login-form/static/js/main.d04f8987.chunk.js.map",
-    "runtime-main.js": "/login-form/static/js/runtime-main.ccaccc85.js",
-    "runtime-main.js.map": "/login-form/static/js/runtime-main.ccaccc85.js.map",
-    "static/js/2.c56a9ba5.chunk.js": "/login-form/static/js/2.c56a9ba5.chunk.js",
-    "static/js/2.c56a9ba5.chunk.js.map": "/login-form/static/js/2.c56a9ba5.chunk.js.map",
-    "index.html": "/login-form/index.html",
-    "static/css/main.fba31b63.chunk.css.map": "/login-form/static/css/main.fba31b63.chunk.css.map",
-    "static/js/2.c56a9ba5.chunk.js.LICENSE.txt": "/login-form/static/js/2.c56a9ba5.chunk.js.LICENSE.txt"
+    "main.css": "/Multi-Step-form-React/static/css/main.fba31b63.chunk.css",
+    "main.js": "/Multi-Step-form-React/static/js/main.d04f8987.chunk.js",
+    "main.js.map": "/Multi-Step-form-React/static/js/main.d04f8987.chunk.js.map",
+    "runtime-main.js": "/Multi-Step-form-React/static/js/runtime-main.98bd9c3a.js",
+    "runtime-main.js.map": "/Multi-Step-form-React/static/js/runtime-main.98bd9c3a.js.map",
+    "static/js/2.c56a9ba5.chunk.js": "/Multi-Step-form-React/static/js/2.c56a9ba5.chunk.js",
+    "static/js/2.c56a9ba5.chunk.js.map": "/Multi-Step-form-React/static/js/2.c56a9ba5.chunk.js.map",
+    "index.html": "/Multi-Step-form-React/index.html",
+    "static/css/main.fba31b63.chunk.css.map": "/Multi-Step-form-React/static/css/main.fba31b63.chunk.css.map",
+    "static/js/2.c56a9ba5.chunk.js.LICENSE.txt": "/Multi-Step-form-React/static/js/2.c56a9ba5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ccaccc85.js",
+    "static/js/runtime-main.98bd9c3a.js",
     "static/js/2.c56a9ba5.chunk.js",
     "static/css/main.fba31b63.chunk.css",
     "static/js/main.d04f8987.chunk.js"
