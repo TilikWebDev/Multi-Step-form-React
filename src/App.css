@@ -135,9 +135,9 @@
     content: "";
     position: absolute;
     border: 5px solid transparent;
-    border-top: 8px solid #91a1aa;
+    border-top: 6px solid #7c8b94;
     z-index: 5;
-    top: 17px;
+    top: 18px;
     right: 10px;
 }
 
