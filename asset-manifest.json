@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/login-form/static/css/main.ab2e6486.chunk.css",
+    "main.css": "/login-form/static/css/main.fba31b63.chunk.css",
     "main.js": "/login-form/static/js/main.d04f8987.chunk.js",
     "main.js.map": "/login-form/static/js/main.d04f8987.chunk.js.map",
     "runtime-main.js": "/login-form/static/js/runtime-main.ccaccc85.js",
@@ -8,13 +8,13 @@
     "static/js/2.c56a9ba5.chunk.js": "/login-form/static/js/2.c56a9ba5.chunk.js",
     "static/js/2.c56a9ba5.chunk.js.map": "/login-form/static/js/2.c56a9ba5.chunk.js.map",
     "index.html": "/login-form/index.html",
-    "static/css/main.ab2e6486.chunk.css.map": "/login-form/static/css/main.ab2e6486.chunk.css.map",
+    "static/css/main.fba31b63.chunk.css.map": "/login-form/static/css/main.fba31b63.chunk.css.map",
     "static/js/2.c56a9ba5.chunk.js.LICENSE.txt": "/login-form/static/js/2.c56a9ba5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ccaccc85.js",
     "static/js/2.c56a9ba5.chunk.js",
-    "static/css/main.ab2e6486.chunk.css",
+    "static/css/main.fba31b63.chunk.css",
     "static/js/main.d04f8987.chunk.js"
   ]
 }
