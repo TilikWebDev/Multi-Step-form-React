@@ -7,7 +7,7 @@ It supports the validation of all steps.
 You can check the form [Here](https://tilikwebdeveloper.github.io/login-form/)
 
 ### Visuals
-![Example of work](https://www.instanews.com.ua/img/4decfae2-f9ff-4b04-81d0-34a449820ab8.gif)
+![Example of work](https://www.instanews.com.ua/img/4decfae2-f9ff-4b04-81d0-34a449820ab83.gif)
 
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
