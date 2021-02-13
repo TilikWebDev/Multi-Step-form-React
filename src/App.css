@@ -126,6 +126,21 @@
     -webkit-appearance: none;
 }
 
+.select__wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.select__wrapper:after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-top: 8px solid #91a1aa;
+    z-index: 5;
+    top: 17px;
+    right: 10px;
+}
+
 .field__input:focus, .field__select:focus {
     outline: none;
     -webkit-box-shadow: 0px 0px 3px 0px #0b7bff;

@@ -35,14 +35,16 @@ export const Input = (props) => {
 export const Select = (props) => {
     return (
         <FormControl {...props}>
-            <select className={'field__select'} {...props.field}>
-                <option value="" disabled>Select...</option>
-                {
-                    props.option.map((o, index) => 
-                        <option defaultValue={true} value={o} key={index}>{`${o[0].toUpperCase()}${o.substring(1)}`}</option>
-                    )
-                }
-            </select>
+            <div className={'select__wrapper'}>
+                <select className={'field__select'} {...props.field}>
+                    <option value="" disabled>Select...</option>
+                    {
+                        props.option.map((o, index) => 
+                            <option defaultValue={true} value={o} key={index}>{`${o[0].toUpperCase()}${o.substring(1)}`}</option>
+                        )
+                    }
+                </select>
+            </div>
         </FormControl>
     )
 }
