@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import LoginContainer from './components/login/login-container';
 
-import './App.css';
+import './App.scss';
 
 const App = (props) => {
   return (

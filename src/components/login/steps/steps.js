@@ -59,12 +59,12 @@ const Category = React.memo(() => {
 const Success = React.memo(({send_data}) => {
     return (      
         <div className={'form__body'}>
-            <div className={'formsuccess'}>
-                <h1 className={'formsuccess__title'}>
+            <div className={'form_success'}>
+                <h1 className={'form_success__title'}>
                     Success!
                 </h1>
 
-                <h4 className={'formsuccess__text'}>
+                <h4 className={'form_success__text'}>
                     Your account was successfuly registered.
                     <br></br>
                     Please wait for account approval.
@@ -72,11 +72,11 @@ const Success = React.memo(({send_data}) => {
                     It can take up to 24 hours.
                 </h4>
 
-                <p className={'formsuccess__contact'}>
+                <p className={'form_success__contact'}>
                     Have questions?
                     <br></br>
                     Contact
-                    <a className={'formsuccess__link'} href="mailto:info@site.com">
+                    <a className={'form_success__link'} href="mailto:info@site.com">
                         info@site.com
                     </a>
                 </p>
